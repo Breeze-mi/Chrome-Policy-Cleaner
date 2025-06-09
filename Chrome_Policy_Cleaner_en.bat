@@ -33,7 +33,7 @@ set "SYS32=%SystemRoot%\System32"
 set "TASKKILL=%SYS32%\taskkill.exe"
 set "GPUPDATE=%SYS32%\gpupdate.exe"
 set "REG=%SYS32%\reg.exe"
-set "RD=%SYS32%\rd.exe"
+rem rd is a built-in CMD command without external executable files
 set "TAKEOWN=%SYS32%\takeown.exe"
 set "ICACLS=%SYS32%\icacls.exe"
 set "EXPLORER=%SystemRoot%\explorer.exe"
@@ -58,7 +58,7 @@ for %%D in (
 ) do (
     if exist "%%~D" (
         echo   Deleting: %%~D
-        "%RD%" /S /Q "%%~D"
+        rd /s /q "%%~D"
     ) else (
         echo   Not found: %%~D, skipping.
     )

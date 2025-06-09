@@ -33,7 +33,7 @@ set "SYS32=%SystemRoot%\System32"
 set "TASKKILL=%SYS32%\taskkill.exe"
 set "GPUPDATE=%SYS32%\gpupdate.exe"
 set "REG=%SYS32%\reg.exe"
-rem 
+rem rd 是 CMD 内置命令，无需外部可执行文件,所以前面这里报错就删了
 set "TAKEOWN=%SYS32%\takeown.exe"
 set "ICACLS=%SYS32%\icacls.exe"
 set "EXPLORER=%SystemRoot%\explorer.exe"
