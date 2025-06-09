@@ -33,7 +33,7 @@ set "SYS32=%SystemRoot%\System32"
 set "TASKKILL=%SYS32%\taskkill.exe"
 set "GPUPDATE=%SYS32%\gpupdate.exe"
 set "REG=%SYS32%\reg.exe"
-set "RD=%SYS32%\rd.exe"
+rem 
 set "TAKEOWN=%SYS32%\takeown.exe"
 set "ICACLS=%SYS32%\icacls.exe"
 set "EXPLORER=%SystemRoot%\explorer.exe"
@@ -58,7 +58,7 @@ for %%D in (
 ) do (
     if exist "%%~D" (
         echo   正在删除：%%~D
-        "%RD%" /S /Q "%%~D"
+        rd /s /q "%%~D"
     ) else (
         echo   未发现：%%~D，跳过。
     )
