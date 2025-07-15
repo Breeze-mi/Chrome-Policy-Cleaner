@@ -151,4 +151,3 @@ timeout /t 1 /nobreak >nul
 echo [9/9] 所有操作已完成！
 echo.
 pause
-cmd /k

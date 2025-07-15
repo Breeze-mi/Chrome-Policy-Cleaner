@@ -150,4 +150,3 @@ echo [9/9] All tasks completed!
 echo It's recommended to restart your PC to ensure all changes take full effect.
 echo Press Enter to exit or close this window manually.
 pause
-cmd /k
